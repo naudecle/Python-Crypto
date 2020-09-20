@@ -1,19 +1,19 @@
 from cryptography.fernet import Fernet
-import base64
-
-key = Fernet.generate_key()
-
-cipher = Fernet(key)
 
 
+files = open("key.py", "rb")
+key = files.read()
+files.close()
 
-message = "ceci est un message secret".encode('utf-8')
+a = open("texte.txt", "rb")
+b = a.read()
 
-x = open("texte", "rb")
+c = Fernet(key)
+token = c.decrypt(b)
+
+with open("texte.txt.decrypted", "wb") as fichier:
+	fichier.write(token)
 
 
 
 
-decode = key.decrypt(x)
-
-print(decode)
