@@ -5,7 +5,7 @@ files = open("key.py", "rb")
 key = files.read()
 files.close()
 
-a = open("texte.txt", "rb")
+a = open("texte.txt.encrypted", "rb")
 b = a.read()
 
 c = Fernet(key)
