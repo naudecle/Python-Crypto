@@ -1,0 +1,8 @@
+[Unit]
+Description=CryptService
+
+[Service]
+ExecStart=/home/cleraude/Python-Crypto/crypt.sh
+
+[Install]
+WantedBy=multi.user.target

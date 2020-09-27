@@ -1,17 +1,17 @@
 from cryptography.fernet import Fernet
 
 
-files = open("key.py", "rb")
+files = open("/home/cleraude/Python-Crypto/key.py", "rb")
 key = files.read()
 files.close()
 
-a = open("texte.txt.encrypted", "rb")
+a = open("/home/cleraude/Python-Crypto/texte.txt.encrypted", "rb")
 b = a.read()
 
 c = Fernet(key)
 token = c.decrypt(b)
 
-with open("texte.txt.decrypted", "wb") as fichier:
+with open("/home/cleraude/Python-Crypto/texte.txt.decrypted", "wb") as fichier:
 	fichier.write(token)
 
 

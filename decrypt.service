@@ -1,0 +1,9 @@
+[Unit]
+
+Descrption=DecryptService
+
+[Service]
+ExecStart=/home/cleraude/Python-Crypto/decrypt.sh
+
+[Install]
+WantedBy=multi.user.target
