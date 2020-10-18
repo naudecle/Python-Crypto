@@ -1,16 +1,18 @@
 # Python-Crypto
 
-##fichier d'installation
+## fichier d'installation
 
-#Pour vous guider a faire le cryptage et le decryptage du fichier texte.txt
+# Pour vous guider a faire le cryptage et le decryptage du fichier texte.txt
 
-#1
+# 1
 
 Ouvrez un terminal et execute ce commande dans la meme partie ou vous avez clone le projet.
 
 Execute le code suivant:
 
 ```sh
+git clone https://github.com/naudecle/Python-Crypto.git
+
 ./install.sh
 
 ```
@@ -23,7 +25,7 @@ chmod +x install.sh
 
 et la suite est d'executer la commande precedente.
 
-#2
+# 2
 
 Apres avoir execute cette comande, ouvre un nouveaux terminale, dans celle si
 vous allais devoir sourcer votre fichier '.bashrc' pour pouvoir en quelque 
@@ -34,15 +36,15 @@ Pour pouvoir le source le source tapez la comande
 $ source ./.bashrc
 ```
 
-#Maintenant vous pouvez executer vos services avec les commandes suivantes
+# Maintenant vous pouvez executer vos services avec les commandes suivantes
 
-##pour le cryptage:
+## pour le cryptage:
 ```sh
 sudo systemctl enable crypt.service
 sudo systemctl start crypt.service
 ```
 
-##pour le decryptage
+## pour le decryptage
 
 ```sh
 sudo systemctl enable decrypt.service
